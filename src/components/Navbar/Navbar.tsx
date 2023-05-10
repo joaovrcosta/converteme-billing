@@ -1,70 +1,59 @@
 // import { useState } from "react";
+import { useState } from "react";
 import styles from "./Navbar.module.css";
-import {
-  LayoutDashboard,
-  ShoppingCart,
-  ShoppingBag,
-  MenuIcon,
-  PencilIcon,
-  DollarSignIcon,
-  Smartphone,
-  Users2Icon,
-  Settings,
-  User2,
-  HelpCircleIcon,
-} from "lucide-react";
+import { selectOptions } from "../../data/data";
+
+import { MenuIcon } from "lucide-react";
 
 export function Navbar() {
-  // const [isOpen, setIsOpen] = useState(true);
-  // const toggle = () => setIsOpen(!isOpen);
+  const [openSelect, setOpenSelect] = useState(false);
+  const [select, setSelect] = useState<number | null>(null);
+  const [navCollapse, setNavCollapse] = useState(false);
 
   return (
     <>
-      <aside className={styles.sidebarNavigation}>
+      <aside
+        className={
+          navCollapse
+            ? styles.sidebarNavigation
+            : `${styles.sidebarNavigation} ${styles.hideSidebar}`
+        }
+      >
         <nav>
           <div className={styles.toggleMenuIcon}>
-            <MenuIcon className={styles.iconItem} />
+            <MenuIcon onClick={() => setNavCollapse(!navCollapse)} />
           </div>
-          <a href="" className={styles.navLink}>
-            <LayoutDashboard className={styles.iconItem} />
-            Dashboard
-          </a>
-          <a href="" className={styles.navLink}>
-            <ShoppingCart className={styles.iconItem} />
-            Minhas Vendas
-          </a>
-          <a href="" className={styles.navLink}>
-            <ShoppingBag className={styles.iconItem} />
-            Meus Produtos
-          </a>
-          <a href="" className={styles.navLink}>
-            <PencilIcon className={styles.iconItem} />
-            Assinaturas
-          </a>
-          <a href="" className={styles.navLink}>
-            <DollarSignIcon className={styles.iconItem} />
-            Cobrança
-          </a>
-          <a href="" className={styles.navLink}>
-            <Smartphone className={styles.iconItem} />
-            Banco Virtual
-          </a>
-          <a href="" className={styles.navLink}>
-            <Users2Icon className={styles.iconItem} />
-            Clientes
-          </a>
-          <a href="" className={styles.navLink}>
-            <Settings className={styles.iconItem} />
-            Configurações
-          </a>
-          <a href="" className={styles.navLink}>
-            <User2 className={styles.iconItem} />
-            Minha conta
-          </a>
-          <a href="" className={styles.navLink}>
-            <HelpCircleIcon className={styles.iconItem} />
-            Ajuda
-          </a>
+          {selectOptions.map((option, index) => {
+            return (
+              <div className={styles.optionContainer}>
+                <div
+                  key={index}
+                  onClick={() => {
+                    setSelect(index);
+                    setOpenSelect(!openSelect);
+                  }}
+                >
+                  <div>
+                    <div className={styles.navLink}>
+                      <div className={styles.optionTitle}>
+                        <div className={styles.iconItem}>{option.icon}</div>
+                        <h3>{option.name}</h3>
+                        <div className={styles.arrowIcon}>{option.arrow}</div>
+                      </div>
+                    </div>
+                    <div>
+                      {select === index && openSelect && (
+                        <div className={styles.options}>
+                          <p>{option.option1}</p>
+                          <p className={styles.lastBold}>{option.option2}</p>
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
         </nav>
       </aside>
     </>

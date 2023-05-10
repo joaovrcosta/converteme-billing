@@ -3,10 +3,11 @@
 * {
   box-sizing: border-box;
   font-family: "Inter";
+  padding: 0px;
+  margin: 0px;
 }
 
 body {
-  margin: 0px;
   background: #eeeeee;
 }
 
@@ -21,16 +22,22 @@ span {
   margin: 0px;
 }
 
+h1,
+h2,
+h3 {
+  font-size: 14px;
+}
+
 a {
   text-decoration: none;
 }
 
-ul,
+/* ul,
 li {
   list-style: none;
   padding: 0px;
   margin: 0px;
-}
+} */
 
 img {
   display: block;

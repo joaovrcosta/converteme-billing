@@ -1,8 +1,9 @@
-import { Navbar } from "./components/Navbar/Navbar";
+// import { Navbar } from "./components/Navbar/Navbar";
 import styles from "./App.module.css";
 import "./styles/global.css";
 import { Header } from "./components/Header/Header";
 import { ArrowLeft, DollarSignIcon } from "lucide-react";
+import { Navbar } from "./components/Navbar/Navbar";
 
 function App() {
   return (
