@@ -1,0 +1,44 @@
+.sidebarNavigation {
+  width: 13.18rem;
+  background-color: #fff;
+  height: 100%;
+  padding: 16px 16px 16px 0px;
+  padding-right: 26px;
+  height: 100vh;
+}
+
+.navLink {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  padding: 7px 7px 7px 16px;
+  margin-bottom: 14px;
+  color: #696969;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navLink:hover {
+  background-color: #004bff;
+  color: #fff;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  transition: 0.2s;
+}
+
+.iconItem {
+  margin-right: 0.81rem;
+  height: 24px;
+  width: 24px;
+}
+
+.toggleMenuIcon {
+  margin-bottom: 20px;
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 7px 7px 7px 16px;
+}

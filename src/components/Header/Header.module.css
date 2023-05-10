@@ -1,0 +1,41 @@
+header img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  display: flex;
+  padding: 10px 16px;
+  background-color: #004bff;
+  justify-content: space-between;
+}
+
+.imageCircle img {
+  height: 43px;
+  width: 43px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+}
+
+.helperContainer {
+  display: flex;
+  align-items: center;
+}
+
+.helperContainer img {
+  margin-left: 17px;
+}
+
+.logoConvertContainer {
+  display: flex;
+  padding: 9.8px 0;
+  cursor: pointer;
+}
+
+.containerIcons {
+  color: #ffffff;
+}
+
+.helpIcon {
+  margin-left: 1.125rem;
+}
