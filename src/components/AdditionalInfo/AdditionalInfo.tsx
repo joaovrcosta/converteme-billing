@@ -1,4 +1,4 @@
-import { Toggle } from "../Form/Toggle/Toggle";
+import { Toggle } from "../FormItems/Toggle/Toggle";
 import styles from "./AdditionalInfo.module.css";
 
 export function AdditionalInfo() {

@@ -1,0 +1,63 @@
+.inputIconWrap {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.labelBox {
+  margin-bottom: 6px;
+}
+
+.labelBox label {
+  font-size: 12px;
+  color: #696969;
+  font-weight: 600;
+}
+
+.inputIcon {
+  background: #004bff;
+  color: #fff;
+  height: ;
+}
+´ .IconWrap {
+  height: 100%;
+}
+
+.inputIconWrap input {
+  height: 100%;
+  border-radius: 0px 8px 8px 0px;
+  border: 1px solid #696969;
+  border-left: none;
+  padding-left: 5px;
+  font-weight: bold;
+  color: #696969;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.inputIconWrap input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.inputWithIcon {
+  display: none;
+  border: none;
+  flex: 1;
+}
+
+.inputIcon,
+.inputWithIcon {
+  padding: 8px;
+  height: 100%;
+  width: 36px;
+  border-radius: 8px 0px 0px 8px;
+}
+
+input:focus {
+  border: 1px solid #004bff;
+  border-left: none;
+}

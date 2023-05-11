@@ -40,8 +40,11 @@
 }
 
 input:checked + .slider {
+  background-color: #ea5462;
+  border-color: #ea5462;
 }
 
 input:checked + .slider:before {
   transform: translate(17px);
+  background-color: #fff;
 }

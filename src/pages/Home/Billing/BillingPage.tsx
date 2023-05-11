@@ -1,11 +1,13 @@
-import { ArrowLeft, DollarSignIcon } from "lucide-react";
+import { ArrowLeft } from "lucide-react";
 import { Header } from "../../../components/Header/Header";
 import { Navbar } from "../../../components/Navbar/Navbar";
 import styles from "./BillingPage.module.css";
-import { MultiStepBar } from "../../../components/Form/MultiStepBar/MultiStepBar";
+import { MultiStepBar } from "../../../components/FormItems/MultiStepBar/MultiStepBar";
 import { AdditionalInfo } from "../../../components/AdditionalInfo/AdditionalInfo";
-import { Select } from "../../../components/Form/Select/Select";
-import { Button } from "../../../components/Form/Button/Button";
+import { Select } from "../../../components/FormItems/Select/Select";
+import { Button } from "../../../components/FormItems/Button/Button";
+import { BillingValueInput } from "../../../components/FormItems/BillingValueInput/BillingValueInput";
+import { ButtonDragging } from "../../../components/FormItems/ButtonDragging/ButtonDragging";
 
 export function BillingPage() {
   return (
@@ -37,10 +39,9 @@ export function BillingPage() {
                     <label className={styles.priceAmount} htmlFor="">
                       Valor da cobrança
                     </label>
-                    <div className={styles.priceAmountInput}>
-                      <DollarSignIcon className={styles.dollarSignIcon} />
-                      <input type="number" placeholder="0,00" />
-                    </div>
+
+                    <BillingValueInput />
+
                     <div className={styles.textArea}>
                       <label htmlFor="">
                         Descrição da cobrança<span>(Opcional)</span>
@@ -53,10 +54,10 @@ export function BillingPage() {
                 <div className={styles.test}>
                   <div className={styles.paymentMethodBilling}>
                     <h2>Qual será a forma de pagamento?</h2>
-                    <label className={styles.toggle}>
-                      <input type="checkbox" />
-                      <span className={styles.slide}></span>
-                    </label>
+                    <ButtonDragging
+                      title1="À vista ou parcelado"
+                      title2="Assinatura"
+                    />
                     <p>
                       O valor será cobrado apenas uma vez, podendo ser parcelado
                       conforme definido abaixo.
