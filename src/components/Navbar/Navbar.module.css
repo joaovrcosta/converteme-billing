@@ -9,12 +9,13 @@
   top: 0;
   left: 0;
   bottom: 0;
-  margin-top: 4.188rem;
+  margin-top: 4.2rem;
   cursor: pointer;
   overflow: hidden;
   transition: width 0.5s;
+  margin-right: 3rem;
 
-  /* z-index: 9999; */
+  z-index: 99;
 }
 
 .navLink {
@@ -76,6 +77,14 @@ a {
     justify-content: center;
     height: 24px;
     width: 24px;
+  }
+
+  .hideSidebar .arrowIcon {
+    display: none;
+  }
+
+  .hideSidebar .navLink {
+    margin-top: 15.5px;
   }
 }
 

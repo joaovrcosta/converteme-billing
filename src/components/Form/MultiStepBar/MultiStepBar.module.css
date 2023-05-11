@@ -1,0 +1,127 @@
+.multiStepContainer {
+}
+
+.stepWizard {
+  width: 100%;
+  margin-bottom: 26px;
+  justify-content: center;
+  align-items: center;
+}
+
+.stepWizardList {
+  background-color: #fff;
+  color: #696969;
+  list-style-type: none;
+  display: flex;
+  padding: 37px 10px;
+  position: relative;
+  z-index: 10;
+}
+
+.stepWizardItem {
+  padding: 0 20px;
+  flex-basis: 0;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  min-width: 170px;
+  position: relative;
+  /* display: none; */
+}
+
+.stepWizardItem + .stepWizardItem:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 19px;
+  background: #696969;
+  width: 100%;
+  height: 2px;
+  transform: translate(-50%);
+  z-index: -10;
+  /* display: none; */
+}
+
+.progressCount {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-weight: 600;
+  margin: 0 auto;
+  position: relative;
+  z-index: 10;
+  /* display: none; */
+}
+
+.progressCount:after {
+  content: "";
+  height: 40px;
+  width: 40px;
+  background: #fff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: -10;
+  border: 1px solid #696969;
+}
+
+.progressCount:before {
+  content: "";
+  height: 10px;
+  width: 20px;
+  border-left: 3px solid #fff;
+  border-bottom: 2px solid #fff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -60%) rotate(-45deg);
+  transform-origin: center center;
+  color: transparent;
+  display: none;
+}
+
+.progressLabel {
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+.firstStepMark span {
+  font-size: 18px;
+  color: #004bff;
+  font-weight: 800;
+}
+
+.firstStepMark .progressCount:after {
+  border: 1px solid #004bff;
+}
+
+.currentItem .progressCount:before,
+.currentItem ~ .stepWizardItem .progressCount:before {
+  display: none;
+}
+
+.currentItem ~ .stepWizardItem .progressCount:after {
+  height: 10px;
+  width: 10px;
+}
+
+.currentItem ~ .stepWizardItem .progressLabel {
+  opacity: 0.5;
+}
+.currentItem .progressCount:after {
+  background: #fff;
+  border: 2px solid #696969;
+}
+.currentItem .progressCount {
+  color: #696969;
+}

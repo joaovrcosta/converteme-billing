@@ -4,6 +4,9 @@ import "./styles/global.css";
 import { Header } from "./components/Header/Header";
 import { ArrowLeft, DollarSignIcon } from "lucide-react";
 import { Navbar } from "./components/Navbar/Navbar";
+import { Select } from "./components/Form/Select/Select";
+import { MultiStepBar } from "./components/Form/MultiStepBar/MultiStepBar";
+import { Toggle } from "./components/Form/Toggle/Toggle";
 
 function App() {
   return (
@@ -25,7 +28,9 @@ function App() {
             <div className={styles.billingBox}>
               <form>
                 <div>
-                  <div className={styles.billingStep}></div>
+                  <div className={styles.billingStep}>
+                    <MultiStepBar />
+                  </div>
                 </div>
                 <div className={styles.formFielsContainer}>
                   <div className={styles.formFiels}>
@@ -56,7 +61,7 @@ function App() {
                         </p>
                       </div>
                       <div>
-                        <input type="checkbox" />
+                        <Toggle />
                       </div>
                     </div>
                     <div className={styles.additionalOptionsContent}>
@@ -68,7 +73,7 @@ function App() {
                         </p>
                       </div>
                       <div>
-                        <input type="checkbox" />
+                        <Toggle />
                       </div>
                     </div>
                   </div>
@@ -101,35 +106,11 @@ function App() {
                     </div>
                   </div>
                   <div className={styles.paymentMethod}>
-                    <h2>Como seu cliente poderá pagar?</h2>
                     <div>
-                      <div className={styles.paymentMethodBox}>
-                        <div className={styles.paymentMethodCheckbox}>
-                          <input type="checkbox" />
-                          <h3>Boleto Bancário</h3>
-                        </div>
-                        <div>
-                          <p>Valor líquido por parcela: R$148,01</p>
-                        </div>
-                      </div>
-                      <div className={styles.paymentMethodBox}>
-                        <div className={styles.paymentMethodCheckbox}>
-                          <input type="checkbox" />
-                          <h3>Pix</h3>
-                        </div>
-                        <div>
-                          <p>Valor líquido por parcela: R$148,01</p>
-                        </div>
-                      </div>
-                      <div className={styles.paymentMethodBox}>
-                        <div className={styles.paymentMethodCheckbox}>
-                          <input type="checkbox" />
-                          <h3>Cartão de Crédito</h3>
-                        </div>
-                        <div>
-                          <p>Valor líquido por parcela: R$148,01</p>
-                        </div>
-                      </div>
+                      <h2>Como seu cliente poderá pagar?</h2>
+                    </div>
+                    <div>
+                      <Select />
                     </div>
                   </div>
                 </div>
