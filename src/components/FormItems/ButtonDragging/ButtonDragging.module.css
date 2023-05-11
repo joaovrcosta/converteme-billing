@@ -3,10 +3,6 @@
   margin-bottom: 20px;
 }
 
-.draggingButtonBox button:first-child {
-  border-right: none;
-}
-
 .draggingButtonBox button:last-child {
   margin-left: -10px;
   z-index: 0;
@@ -19,26 +15,26 @@
   font-weight: 800;
   white-space: nowrap;
   border-radius: 8px;
-  border: 1px solid #707070;
-  background: #fff;
-  color: #004bff;
+  border: 1px solid var(--gray-400);
+  background: var(--white);
+  color: var(--blue);
   z-index: 1;
 }
 
 .botao:hover {
-  background-color: #004bff;
+  background-color: var(--blue);
   cursor: pointer;
-  color: #fff;
+  color: var(--white);
 }
 
 .ativo {
-  background-color: #004bff;
-  border-color: 1px solid #004bff;
-  color: #ffffff;
+  background-color: var(--blue);
+  border-color: 1px solid var(--blue);
+  color: var(--white);
 }
 
 .ativoAzul {
   background-color: #3b82f6;
   border-color: #3b82f6;
-  color: #ffffff;
+  color: var(--white);
 }

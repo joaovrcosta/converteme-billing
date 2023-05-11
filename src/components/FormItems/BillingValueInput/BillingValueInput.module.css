@@ -9,13 +9,13 @@
 
 .labelBox label {
   font-size: 12px;
-  color: #696969;
+  color: var(--gray-400);
   font-weight: 600;
 }
 
 .inputIcon {
-  background: #004bff;
-  color: #fff;
+  background: var(--blue);
+  color: var(--white);
   height: ;
 }
 ´ .IconWrap {
@@ -25,11 +25,11 @@
 .inputIconWrap input {
   height: 100%;
   border-radius: 0px 8px 8px 0px;
-  border: 1px solid #696969;
+  border: 1px solid var(--gray-400);
   border-left: none;
   padding-left: 5px;
   font-weight: bold;
-  color: #696969;
+  color: var(--gray-400);
 }
 
 input[type="number"]::-webkit-inner-spin-button,
@@ -58,6 +58,6 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 input:focus {
-  border: 1px solid #004bff;
+  border: 1px solid var(--blue);
   border-left: none;
 }

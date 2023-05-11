@@ -7,6 +7,20 @@
   margin: 0px;
 }
 
+/* Colors: */
+:root {
+  --white: #ffffff;
+  --gray-50: #eeeeee;
+  --gray-100: #d7d7d7;
+  --gray-400: #696969;
+  --green: #00cda8;
+  --black: #000000;
+  --blue: #004bff;
+  --blue-150: #0a2b78;
+  --orange: #ff5d00;
+  --red: #ea5462;
+}
+
 body {
   background: #eeeeee;
 }

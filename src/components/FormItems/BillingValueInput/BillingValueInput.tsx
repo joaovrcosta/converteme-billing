@@ -1,6 +1,6 @@
 import { DollarSignIcon } from "lucide-react";
-import styles from "./BillingValueInput.module.css";
 import { useRef } from "react";
+import styles from "./BillingValueInput.module.css";
 
 export function BillingValueInput() {
   const inputRef = useRef<HTMLInputElement>(null);

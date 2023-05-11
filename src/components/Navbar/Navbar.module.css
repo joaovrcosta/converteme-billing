@@ -1,6 +1,6 @@
 .sidebarNavigation {
   width: 13rem;
-  background-color: #fff;
+  background-color: var(--white);
   height: 100%;
   padding: 16px 16px 16px 0px;
   padding-right: 26px;
@@ -24,7 +24,7 @@
   font-size: 14px;
   padding: 7px 7px 7px 16px;
   margin-bottom: 12px;
-  color: #696969;
+  color: var(--gray-400);
   font-weight: bold;
   flex-direction: column;
 }
@@ -38,8 +38,8 @@ a {
 }
 
 .navLink:hover {
-  background-color: #004bff;
-  color: #fff;
+  background-color: var(--blue);
+  color: var(--white);
   border-top-right-radius: 50px;
   border-bottom-right-radius: 50px;
   transition: 0.2s;
@@ -53,7 +53,7 @@ a {
 
 .toggleMenuIcon {
   margin-bottom: 20px;
-  color: #000;
+  color: var(--black);
   text-decoration: none;
   cursor: pointer;
   padding: 7px 7px 0px 16px;
@@ -97,11 +97,11 @@ a {
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 15px;
-  color: #696969;
+  color: var(--gray-400);
 }
 
 .options p:hover {
-  color: #004bff;
+  color: var(--blue);
 }
 
 .options:first-child {

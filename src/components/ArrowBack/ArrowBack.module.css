@@ -1,0 +1,27 @@
+.arrowBack {
+  margin-bottom: 20px;
+  color: var(--blue);
+}
+
+.arrowBackLink {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--blue);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.arrowLeft {
+  margin-right: 16px;
+}
+
+.billingTitle {
+  color: var(--gray-400);
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-bottom: 20px;
+}

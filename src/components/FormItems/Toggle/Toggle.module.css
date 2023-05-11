@@ -18,10 +18,10 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #fff;
+  background-color: var(--white);
   -webkit-transition: 0.4s;
   transition: 0.4s;
-  border: 1px solid #ea5462;
+  border: 1px solid var(--red);
   border-radius: 36px;
 }
 
@@ -35,16 +35,16 @@
   background-color: white;
   -webkit-transition: 0.4s;
   transition: 0.4s;
-  background-color: #ea5462;
+  background-color: var(--red);
   border-radius: 50%;
 }
 
 input:checked + .slider {
-  background-color: #ea5462;
-  border-color: #ea5462;
+  background-color: var(--red);
+  border-color: var(--red);
 }
 
 input:checked + .slider:before {
   transform: translate(17px);
-  background-color: #fff;
+  background-color: var(--white);
 }

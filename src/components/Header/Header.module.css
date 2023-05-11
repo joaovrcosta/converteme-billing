@@ -14,7 +14,7 @@ header img {
 .container {
   display: flex;
   padding: 10px 16px;
-  background-color: #004bff;
+  background-color: var(--blue);
   justify-content: space-between;
 }
 
@@ -22,7 +22,7 @@ header img {
   height: 43px;
   width: 43px;
   border-radius: 50%;
-  border: 1px solid #fff;
+  border: 1px solid var(--white);
 }
 
 .helperContainer {
@@ -41,7 +41,7 @@ header img {
 }
 
 .containerIcons {
-  color: #ffffff;
+  color: var(--white);
 }
 
 .helpIcon {

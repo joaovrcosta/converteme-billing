@@ -12,7 +12,7 @@
 
 .paymentMethodBox p {
   font-size: 14px;
-  color: #696969;
+  color: var(--gray-400);
 }
 
 .paymentMethodCheckbox {
@@ -42,7 +42,7 @@ input[type="checkbox"] {
 }
 
 input[type="checkbox"]:checked {
-  background-color: #004bff;
+  background-color: var(--blue);
 }
 
 .options {
