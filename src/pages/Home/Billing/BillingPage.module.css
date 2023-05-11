@@ -171,48 +171,7 @@
   margin-bottom: 20px;
 }
 
-.nextStepButton {
-  padding: 7.5px 28px;
-  border-radius: 24px;
-  border: none;
-  background-color: #004bff;
-  font-size: 14px;
-  text-transform: uppercase;
-  font-weight: 600;
-  color: #fff;
-}
-
 /* Opções adicionais: */
-
-.additionalOptions {
-  box-shadow: 0px 3px 6px #00000029;
-  padding: 12px 15px;
-  width: 18.31rem;
-  margin-left: 5.75rem;
-  border-radius: 8px;
-}
-
-.additionalOptions h2 {
-  font-size: 16px;
-  color: #696969;
-  font-weight: 600;
-  margin-bottom: 20px;
-}
-
-.additionalOptionsContent {
-  display: flex;
-}
-
-.additionalOptionsContent h3 {
-  color: #004bff;
-  font-weight: 600;
-  font-size: 14px;
-}
-
-.additionalOptionsContent p {
-  font-size: 10px;
-  color: #696969;
-}
 
 .buttonContainer {
   display: flex;
